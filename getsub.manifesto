@@ -1,21 +1,22 @@
 
 main()
 ------
-- style => freestyle-no-refrence
-- main-plan => no-plan      #main-plan == brainstrom ..etc
-- proj-mng => non
+- style => freestyle-no_refrence
+- main_plan => no_plan      #main_plan == brainstrom ..etc
+- proj_mng => non
 - paradigm => pyramid(game-art-science) #pyramid -> buit in funciton
-- sub-plan => design($style) -> front-end(dev().$fe-) -> db(dev().$dbms) -> back-end(dev().$be-)
+- sub_plan => design($style) -> front_end(dev().$fe) -> db(dev().$dbms) -> back-end(dev().$be)
 - type -> new(youtube)
 
 dev()
 -----
-- fe-lingos => html-css-js
-# - fe-frameworks => bootstrap
-# - fe-kits => non
-- be-lingos => python
-- be-frameworks => flask
+- fe.lingos => html-css-js
+# - fe.frameworks => bootstrap
+# - fe.kits => non
+- be.lingos => python
+- be.frameworks => flask
 - dbms => sqlite
+- apis => google_fonts
 - paradigms => cs-programming-oop-dbd-internet-webdev
 
 design()
@@ -25,15 +26,15 @@ design()
 
 tools()
 -------
-    physical-tools()
+    physical_tools()
     ================
         - all => pen+paper+computer
 
-    design-tools()
+    design_tools()
     ==============
         - software => figma
 
-    dev-tools()
+    dev_tools()
     ===========
         - software => vscode 
 
