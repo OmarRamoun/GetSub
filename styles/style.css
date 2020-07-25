@@ -29,6 +29,10 @@
     -webkit-clip-path: circle(10000px at 88% 1%);
 } */
 
+h1 {
+    margin-right: auto;
+}
+
 .logo {
     width: 13%;
     margin-right: auto;
@@ -39,6 +43,20 @@ sup {
     font-family: arial;
     font-size: 18px;
     margin-left: 3px;   
+}
+
+#seehow {
+    display: inline;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 0;
+    opacity: 0.5;
+}
+
+.see:hover {
+    color: transparent;
+    background-color: white;
+    cursor: pointer;
 }
 
 .s1 {
@@ -147,9 +165,6 @@ sup {
     background-color: white !important;
 } */
 
-h1 {
-    margin-right: auto;
-}
 
 .navbar-divider {
     width: 4px;
