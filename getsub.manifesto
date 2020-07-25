@@ -3,6 +3,7 @@ main()
 ------
 - style => freestyle-no_refrence
 - main_plan => no_plan      #main_plan == brainstrom ..etc
+- freeride => yeah
 - proj_mng => non
 - paradigm => pyramid(game-art-science) #pyramid -> buit in funciton
 - sub_plan => design($style) -> front_end(dev().$fe) -> db(dev().$dbms) -> back-end(dev().$be)
