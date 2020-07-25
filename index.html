@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Getsub</title>
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>		
+	<div class="navbar">
+		<h1>get<span id="logo_sub">sub</span><sup>&trade;</sup></h1>
+		<!-- <img src="images/logo2.svg" alt="logo" class="logo">  -->
+		<nav>
+			<ul class="nav_links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">news</a></li>
+				<li><a href="#">contact</a></li>
+				<li><a href="#">help</a></li>
+			</ul>
+		</nav>
+		<div class="navbar-divider"></div>
+		<a href="login.html"><button class="btn2">log in</button></a>				
+	</div>
+	
+	<div id="fullpage" class="fullpage">						
+		<div class="section active s1">
+			<div class="toto">
+				<h2>
+					Your Window to Profit from Youtube!
+				</h2>
+				<p>Check out our new bundules and deals to know more...</p>
+			</div>
+		</div>
+		<div class="section s2"></div>
+		<div class="section s3"></div>
+		<div class="section s4"></div>
+		<div class="section s5"></div>
+		<div class="section s6"></div>
+		<div class="section s7"></div>
+		<div class="section s8" id='s8'></div>        
+	</div>
+		
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+	//Navigation
+	menu: '#menu',
+	lockAnchors: false,
+	anchors:['home', 'secondPage'],
+	navigation: true,
+	navigationPosition: 'right',
+	navigationTooltips: ['home', 'second'],
+	showActiveTooltip: false,
+	slidesNavigation: true,
+	slidesNavPosition: 'top',
+
+	//Scrolling
+	css3: true,
+	scrollingSpeed: 1000,
+	autoScrolling: true,
+	fitToSection: true,
+	fitToSectionDelay: 1000,
+	scrollBar: true,
+	easing: 'easeInOutCubic',
+	easingcss3: 'ease',
+	loopBottom: true,
+	loopTop: true,
+	loopHorizontal: true,
+	continuousVertical: false,
+	continuousHorizontal: false,
+	scrollHorizontally: false,
+	interlockedSlides: false,
+	dragAndMove: true,
+	offsetSections: false,
+	resetSliders: false,
+	fadingEffect: false,
+	normalScrollElements: '#element1, .element2',
+	scrollOverflow: false,
+	scrollOverflowReset: false,
+	scrollOverflowOptions: null,
+	touchSensitivity: 15,
+	bigSectionsDestination: null,
+
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
+
+	//Design
+	controlArrows: true,
+	verticalCentered: true,
+	sectionsColor : ['#ccc', '#fff'],
+	paddingTop: '3em',
+	paddingBottom: '10px',
+	fixedElements: '#header, .footer',
+	responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
+	parallax: true,
+	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+	cards: false,
+	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+	//Custom selectors
+	sectionSelector: '.section',
+	slideSelector: '.slide',
+
+	lazyLoading: true,
+
+	//events
+	onLeave: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){},
+	afterRender: function(){},
+	afterResize: function(width, height){},
+	afterReBuild: function(){},
+	afterResponsive: function(isResponsive){},
+	afterSlideLoad: function(section, origin, destination, direction){},
+	onSlideLeave: function(section, origin, destination, direction){}
+});
+	</script>	
+</body>
+</html>
