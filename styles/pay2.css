@@ -1,0 +1,206 @@
+:root {
+    --grd : linear-gradient(90deg, #ee6352, purple, #ee6352, rgb(0, 179, 179));
+}
+
+body {
+    min-height: 80vh;
+    display: grid;    
+    place-items: center;
+    background: var(--grd);
+    /* background-image: url('https://unsplash.it/1800'); */
+    background-blend-mode: screen;
+    background-size: cover;
+    background-size: 400%;
+    animation: bg-animation 30s infinite alternate;
+}
+
+body::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('bg9.jpg');
+    opacity: 0.3;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+button {
+    border-radius: 10px;
+    position: relative;  
+    z-index: 1;  
+}
+
+button::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    z-index: -1;
+
+    transform: scale(0);
+    transform-origin: left;
+
+    transition: transform 10ms ease-in;
+}
+
+button:active::before {
+    transform: scale(1);
+    transform-origin: right;    
+}
+
+.btn {
+    font-size: 20px;
+    padding: 5px 20px 7px 20px;
+    text-transform: uppercase;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 2s ease-in;
+    transition: color 300ms ease-in;
+}
+
+.btn:hover {
+    background: black;
+    color:white;
+}
+
+
+button::after {
+    margin-top: 3px;
+    display: block;
+    content: '';
+    position: abslute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);/*0.56*/
+    transform-origin: right;
+
+    transition: transform 250ms ease-in;
+}
+
+button:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.sign-up-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;    
+    overflow: hidden;
+    width: 80%;
+    max-width: 300px;
+    border: 10px solid white;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#username, 
+#password,
+button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: 0;
+}   
+
+#username,
+#password {
+    padding: 1em;    
+}
+
+#username:focus::placeholder,
+#password:focus::placeholder {
+    color: rgb(6, 145, 209);
+}
+
+.form-item:first-of-type {
+    position: relative;
+}
+
+.form-item:first-of-type::after {
+    display: block;
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    color: white;
+    background: var(--grd);
+    background-size: 500%;
+    background-position: right;
+    padding: 0.5em 1em;   
+    transition: background-position 0.4s ease-in;     
+}
+
+button:focus,
+button:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+/*media query*/
+@media only screen and (min-width:500px) {
+    .sign-up-form {
+        flex-direction: row;
+        max-width: 700px;
+        border-radius: 50px;
+        border: 10px solid white;
+    }
+
+    button {
+        margin-left: auto;
+        border-radius: 50px;
+    }
+
+    .form-item:first-of-type::after {          
+        bottom: 0;     
+        top: 0;
+        right: 1px;   
+        left: initial;     
+        width: 2px;
+        height: initial;        
+    }
+
+    #password {
+        justify-content: center;
+    }
+
+    .form-item {
+        flex: 1 1;
+    }
+    
+}
+
+.modal {
+    visibility: hidden;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);    
+}

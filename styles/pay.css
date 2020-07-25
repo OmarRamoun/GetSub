@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(199, 30, 30);
+    background: url("bg5.jpg");
+    background-blend-mode: multiply;    
+    background-image: linear-gradient(to top left, rgb(255, 145, 0), rgb(255, 208, 0));
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    height: 100vh;
+}
+
+.modal {
+    background-color: white;    
+    display: table-cell;
+    justify-content: center;
+    height: 300px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    display: table;
+    margin: 0 auto;
+    margin-top: 150px;
+    box-shadow: 20px 20px 0px black;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: solid black 2px;
+    border-radius: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+
+button {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 20px;
+    border: solid black 2px;
+    border-radius: 50px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+button::after {
+    margin-top: 3px;
+    display: block;
+    content: '';
+    position: abslute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);/*0.56*/
+    transform-origin: right;
+
+    transition: transform 250ms ease-in;
+}
+
+button:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.sign-up-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;    
+    overflow: hidden;
+    width: 80%;
+    max-width: 300px;
+    border: 10px solid white;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#cc,
+button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: 0;
+}   
+
+#cc {
+    padding: 1em;    
+}
+
+#cc:focus::placeholder {
+    color: rgb(6, 145, 209);
+}
+
+.form-item:first-of-type {
+    position: relative;
+}
+
+.form-item:first-of-type::after {
+    display: block;
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    color: white;
+    background: var(--grd);
+    background-size: 500%;
+    background-position: right;
+    padding: 0.5em 1em;   
+    transition: background-position 0.4s ease-in;     
+}
+
+button:focus,
+button:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+/*media query*/
+@media only screen and (min-width:500px) {
+    .sign-up-form {
+        flex-direction: row;
+        max-width: 700px;
+        border-radius: 50px;
+        border: 10px solid white;
+    }
+
+    button {
+        margin-left: auto;
+        border-radius: 50px;
+    }
+
+    .form-item:first-of-type::after {          
+        bottom: 0;     
+        top: 0;
+        right: 1px;   
+        left: initial;     
+        width: 2px;
+        height: initial;        
+    }
+
+    #cc {
+        justify-content: center;
+    }
+
+    .form-item {
+        flex: 1 1;
+    }
+    
+}

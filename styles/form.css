@@ -1,0 +1,182 @@
+
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  /* background-color: white; */
+  background-image: url("bg9.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background: cover;  
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;     
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+fieldset {
+    background-color: 	#1b2831 ;
+    color: #3CB19E;
+
+    padding: 6%;
+    margin: 0px;
+
+    border: solid rgb(255, 255, 255) 0px;
+    border-radius: 40px;
+
+    width: 600px;
+
+    display: inline-block;    
+} 
+
+legend {
+    color: rgb(255, 255, 255);
+    background-color: #3CB19E;
+
+    font-family: "PT Sans";
+    font-weight: 300;
+    font-size: 20pt;
+
+    text-align: center;
+
+    width: 200px;
+
+    border-radius: 60px;
+    border: rgb(255, 255, 255) solid 3px;
+
+    padding: 6px 5px 6px 5px;
+
+    display: inline-block;
+        
+}
+
+/*needs more modifcation*/
+form {
+    margin: 0px;
+    text-align: center;    
+}
+
+label {
+    font-family: "PT Sans";
+    font-size: 25pt;
+    
+    text-align: center;
+
+    display: block;    
+} 
+
+input {
+    background-color:	rgb(26, 34, 41);
+    color: white;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18pt;
+
+    text-align: center;
+
+    padding: 3px 20px 3px 20px;
+
+    border: 0px;
+    border-radius: 50px;
+
+    height: 50px;
+
+}
+
+button {
+    margin-top: 1%;
+    
+    width: 40%;
+    height: 50px;
+
+    border: 0px;
+    border-radius: 50px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+
+    color: #3CB19E;
+}
+
+.formblock {
+    text-align: center;
+    width: 100%;
+    opacity: 0.95;    
+    margin-top: 100px;
+}
+
+fieldset {
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.766);
+}
+
+input::placeholder {
+    color: rgb(105, 105, 105);
+}
+
+button:hover {
+    color: white;
+    background-color: #3CB19E;
+   /* box-shadow: 3px 5px 5px rgb(32, 32, 32);*/
+    transition-duration: 0.7s;
+    transition-property: all;
+    cursor: pointer;
+}
+
+
+button:active {
+    background-color: #444;
+    transition-duration: 0.7s;    
+    transition-delay: 0.1s;
+    
+}
+
+.userblock {
+    margin-bottom: 4%;
+}
+
+input:hover {
+    background-color: rgb(25, 30, 34);
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+
+input:focus {
+    background-color: rgb(24, 27, 29);
+    transition: 0.4s;
+}
+
+#logo {
+    height: 50px;
+}
+
+.g-logo {
+    color: crimson;
+}
+
+.chk {
+    display: inline-block;
+}
+
+.terms {
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+}
+
