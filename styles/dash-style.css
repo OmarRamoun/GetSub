@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700,900&display=swap');
+
+:root {
+    --grd : linear-gradient(30deg, #ee6352, purple, #ee6352, rgb(0, 179, 179));
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+body {
+    background-image: url(../dash-bg2.jpeg);        
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.navbar {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(175, 175, 175)); 
+    height: 40px;
+}
+
+.coin {
+    display: inline;
+    height: 13px;
+    margin-right: 3px;
+}
+
+.container {
+    background-color: black;
+    height: 600px;
+    border-radius: 20px;
+    opacity: 0.3;
+    color: white;
+}
+
+.left-side-panel ul{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    width: 20%;
+    border-radius: 20px;
+    height: 400px;
+    float: left;
+    margin-left: 20px
+}
+
+.left-side-panel ul li {
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.right-side-panel {
+    float: right;
+}

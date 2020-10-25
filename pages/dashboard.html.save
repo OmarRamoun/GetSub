@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/dash-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav_links">
+            <li><img class="coin" src="../coin.svg">tokens</li>
+            <li><span>photo</span> name</li>
+            <li><span>not</span></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-side-panel">
+            <ul>
+                <li>Campain</li>
+                <li>subscribe</li>
+                <li>watch</li>
+                <li>get tokens</li>
+            </ul>
+        </div>
+        <div class="right-side-panel">
+            <!--<iframe style="height:600px;width: 600px;" src="https://www.ekb.eg" frameborder="0"></iframe>-->
+		<file:///home/ramoun/Desktop/getsub/pages/dashboard.html
+        </div>
+    </div>
+</body>
+</html>
